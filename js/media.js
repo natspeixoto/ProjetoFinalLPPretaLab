@@ -18,9 +18,6 @@ function calcularMedia() {
   const nota2 = parseFloat(document.getElementById("nota2").value);
   const nota3 = parseFloat(document.getElementById("nota3").value);
   const nota4 = parseFloat(document.getElementById("nota4").value);
-  // acessa o elemento HTML cujo id é "nota4". Este elemento é um campo de entrada de texto (<input>)
-  // .value - obtém o valor contido no campo de entrada (o texto que o usuário digitou)
-  // parseFloat - converte o valor obtido (que é inicialmente uma string) em um número decimal (ponto flutuante)
 
   let mensagem = "";
 
@@ -35,9 +32,9 @@ function calcularMedia() {
 
 // EXPLICACOES ADICIONAIS
 /* 
-<b> Árvore DOM (Document Object Model) </b>, que é a representação hierárquica de todos os elementos de uma página HTML
+Árvore DOM (Document Object Model), que é a representação hierárquica de todos os elementos de uma página HTML
 
-```javascript
+
 Document
 └── html
     ├── head
@@ -46,7 +43,7 @@ Document
     └── body
         └── input (type="number", id="nota1")
 
-```
+
 - `document` - representa a raiz da árvore DOM (o nó principal que contém todo o documento HTML)
 - `getElementById("nota1")` - percorre a árvore DOM para encontrar o nó que corresponde ao elemento com id="nota1"
 - `.value` - acessa o valor contido no nó <input> da árvore DOM
@@ -57,12 +54,17 @@ a um elemento específico. Isso facilita para o JavaScript encontrar e interagir
 
 - usar um id descritivo como "nota1" torna o código mais legível e compreensível, alem de obedecer o semantismo.
 
-<br>
-
 relação prática com a Árvore DOM permite que o JS:
 - leia os atributos e conteúdos dos nós (como value, id, class)
 - modifique elementos do documento, como mudar valores ou alterar estilos
 - adicione ou remova nós dinamicamente
+
+
+MANIPULADOR DE EVENTOS 
+onclick é um atributo HTML que define o que deve acontecer quando o usuário clica no elemento (como um botão ou um link)
+** ele é um evento que dispara a execução de uma ação ou função definida em JavaScript, no caso calcularMedia() **
+
+essa função deve estar definida no código JavaScript associado à página
 
 
 */ 
